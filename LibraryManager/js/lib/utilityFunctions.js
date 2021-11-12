@@ -1,5 +1,7 @@
 "use strict";
-var enums_1 = require('../enums');
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.PrintBook = exports.GetTitles = exports.CheckoutBooks = exports.CreateCustomer = exports.CreateCustomerID = exports.GetBookByID = exports.LogBookTitles = exports.GetBookTitlesByCategory = exports.LogFirstAvailable = exports.GetAllMagazines = exports.GetAllBooks = exports.Purge = exports.MaxBooksAllowed = exports.CalculateLateFee = void 0;
+var enums_1 = require("../enums");
 function CalculateLateFee(daysLate) {
     return daysLate * .25;
 }

@@ -1,27 +1,7 @@
 "use strict";
-var Employee = (function () {
-    function Employee() {
-    }
-    Employee.prototype.addToSchedule = function () {
-        console.log('Employee added to schedule.');
-    };
-    Employee.prototype.logTitle = function () {
-        ;
-        console.log("Employee has the title " + this.title + ".");
-    };
-    return Employee;
-}());
-exports.Employee = Employee;
-var Researcher = (function () {
-    function Researcher() {
-    }
-    Researcher.prototype.doResearch = function (topic) {
-        console.log("Doing research on " + topic + ".");
-    };
-    return Researcher;
-}());
-exports.Researcher = Researcher;
-var UniversityLibrarian = (function () {
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ReferenceItem = exports.UniversityLibrarian = void 0;
+var UniversityLibrarian = /** @class */ (function () {
     function UniversityLibrarian() {
     }
     UniversityLibrarian.prototype.assistCustomer = function (custName) {
@@ -30,7 +10,7 @@ var UniversityLibrarian = (function () {
     return UniversityLibrarian;
 }());
 exports.UniversityLibrarian = UniversityLibrarian;
-var ReferenceItem = (function () {
+var ReferenceItem = /** @class */ (function () {
     function ReferenceItem(title, year) {
         this.title = title;
         this.year = year;
@@ -47,7 +27,7 @@ var ReferenceItem = (function () {
         set: function (newPublisher) {
             this._publisher = newPublisher;
         },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     ReferenceItem.department = 'Research';
